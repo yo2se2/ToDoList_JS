@@ -1,0 +1,13 @@
+.form > p {
+  display: none;
+}
+
+.form > p.errormessage {
+  display: inline;
+  color: red;
+}
+
+.todoli > li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */
