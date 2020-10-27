@@ -1,4 +1,4 @@
-const btn = document.body.querySelector('#btn')
+const btn = document.body.querySelector('.btn')
 
 
 function addItem(){

@@ -1,4 +1,4 @@
-.form > p{
+.input-form > #error{
      display:none;
     &.errormessage{
         display:inline;
@@ -8,4 +8,43 @@
 
 .todoli > li{
     list-style: none;
+}
+
+// 背景色がスライドするボタン
+.btn{
+    
+    background-color:white;
+    color:Black;
+    border:2px solid black;
+    padding:10px 40px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+  
+
+    &.slide-bg{
+        position:relative;
+        //枠外のものを隠す
+        overflow:hidden;
+        z-index:1;
+        & span{
+            display:inline-block;
+            width:100%;
+            height:100%;
+            background-color: Black;
+            position:absolute;
+            top:0;
+            left:0;
+            transform:translateX(-100%);
+            transition: transform 0.3s;
+            z-index: -1;
+        }
+        &:hover {
+            color:white;
+            & span{
+              transform:none;
+          }
+    }
+  }
+   
 }
