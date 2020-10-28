@@ -1,0 +1,11 @@
+.input-form > #error{
+    display:none;
+   &.errormessage{
+       display:inline;
+       color:red;
+   }
+}
+
+.todoli > li{
+   list-style: none;
+}
