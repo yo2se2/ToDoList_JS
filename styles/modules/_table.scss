@@ -1,0 +1,45 @@
+table{
+    width:80%;
+    height:10px;
+    border:solid 1px black;
+    margin:0 auto;
+    border-collapse: collapse;
+   
+    & th{
+      width: 30%;
+      padding:10px;
+      margin:10px;
+      color:white;
+      border:solid 1px black; 
+      background-color:blue;   
+    }
+    & td{
+        &.input-form{
+            border: 0 none;
+        }
+        padding:10px;
+        border:solid 1px black;
+    }
+  }
+
+#dotext{
+    //親要素のformに合わせる.
+    width:100%;
+    
+}
+.form {
+    //divの中央ぞろえ
+    width:80%;
+    margin:0 auto;
+}
+
+.edit-delete-btn{
+    & .editbtn,
+      .deletebtn{
+        cursor: pointer;
+        background-color: white;
+        border:2px solid gray;
+    }
+    padding-left:30px;
+}
+

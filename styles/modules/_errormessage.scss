@@ -1,11 +1,14 @@
-.input-form > #error{
-    display:none;
+ .todotable{
+     margin:0 auto
+ }
+ #error{
+     display:none;
    &.errormessage{
-       display:inline;
+       display:block;
+       width:60%;
        color:red;
+       margin:0 auto;
+       text-align:center;
    }
 }
 
-.todoli > li{
-   list-style: none;
-}

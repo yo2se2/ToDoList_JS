@@ -1,8 +1,11 @@
 // モジュールのimport
 @import 'modules/mixin';
 @import 'modules/text-animation';
-@import 'modules/button';
 @import 'modules/errormessage';
+@import 'modules/logo-animation';
+@import 'modules/button';
+@import 'modules/editmode';
 
 //サイトのベース
-// @import 'breakpoints/base';
+@import 'breakpoints/base';
+@import 'modules/table';

@@ -9,34 +9,63 @@
 </head>
 <body>
     <div class="container">
-        <header class="header">
-
+        <div class="main-container">
+                <header class="header">
+                    <div class="ToDo-logo">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="o"></div>
+                        <div class="line3"></div>
+                    </div>
+                    <h1 class="animate-title">ToDoList</h1>
+                </header>
+        
+                <!-- todolistを表にまとめる-->
+                <section class="todotable">
+                    <p id="error">*タスクを入力してください!</p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Todos</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody">       
+                            <tr>
+                                <td class="input-form">
+                                    <div class="form">
+                                        <input type="text"  id="dotext">      
+                                    </div>
+                                </td>                    
+                            </tr>
+                        <!-- Todosの表を以下に追加・作成 -->
+        
+                        </tbody>
+                    </table>
+                    <div class="submit-btn">
+                        <button class="btn slide-bg"><span></span>ADD</button>
+                    </div>              
+        
+                </section>
+                
+        </div>
+        <div class="sub-container">
+        </div>
+        <div class="edit-container">
+            <p>[内容を修正してください。]</p>
+            <div class="text-form">
+                <input type="text"  class=edit-text>
+            </div>
+            <div>
+              <button class="btn slide-bg modify"><span></span>修正</button>
+            </div>
             
-        </header>
+        </div>
 
 
-        <h1 class="animate-title">ToDoList</h1>
-        <div class="input-form">
-            <p id="error">*タスクを入力してください!</p>
-            <div class="form">
-                <input type="text"  id="dotext">      
-            </div>
-        </div>
-        
-        
-        <div>
-            <button class="btn slide-bg"><span></span>ADD</button>
-        </div>
-        <hr>
-        <section class="to-do-list"> 
-            <div class="todo">
-                <ul class="todoli">
-                <!-- JSによってliが追加される -->
-                </ul>    
-            </div>
-        </section>        
+
     </div>
+   
 </body>
 <!-- <script src="main.js"></script> -->
 <script src="scripts/main.js"></script>
-</html>
+</html> 

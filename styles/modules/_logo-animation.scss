@@ -1,0 +1,62 @@
+.ToDo-logo{
+    display: inline-block;
+    border: 2px solid black;
+    height:100px;
+    width:100px;
+    position:relative;
+    overflow:hidden;
+
+    & .o{
+        position:absolute;
+        height:40px;
+        width:40px;
+        top:50px;
+        left:40px;
+        transform:translateY(-250%);
+        transition:transform 1.3s;
+        border-radius: 50%;
+        border:5px solid black;
+
+
+    }
+   
+
+    & .line1{
+        position: absolute;
+        background-color: black;
+        width:100px;
+        height:20px;
+        transform:translateX(-100%);
+        transition:transform 0.5s;
+    }
+    & .line2 {
+        position:absolute;
+        background-color: black;
+        width:10px;
+        height:100px;
+        left:20px;
+        transform:translateY(-100%);
+        transition:transform 0.5s;
+        transition-delay:0.5s
+    }
+    & .line3 {
+        position:absolute;
+        background-color: black;
+        width:10px;
+        height:70px;
+        top:30px;
+        left:90px;
+        transform:translateY(-150%);
+        transition:transform 0.5s;
+        transition-delay:0.5s
+    }
+    &.move{
+        & .line1,
+          .line2,
+          .line3,
+          .o{
+            transform:none;
+        }
+    }
+
+}

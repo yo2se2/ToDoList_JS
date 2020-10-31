@@ -1,6 +1,11 @@
+.submit-btn{
+   padding-top:80px;
+   text-align:center;
+}
+
 
 .btn{
-    
+    position:absolute;
     background-color:white;
     color:Black;
     border:2px solid black;
@@ -8,6 +13,7 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
+
   
 // 背景色がスライドするボタン
     &.slide-bg{
@@ -35,4 +41,26 @@
     }
   }
    
+}
+
+button {
+    &[class^="deletebtn"]{
+        border:1px solid black;
+        cursor:pointer;
+        &:hover{
+            background-color: red;
+            color:white;
+            transition:0.5s;
+        }
+    }
+
+    &[class^="editbtn"]{
+        border:1px solid black;
+        cursor:pointer;
+        &:hover{
+            background-color: green;
+            color:white;
+            transition:0.5s;
+        }
+    }
 }
